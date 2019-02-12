@@ -3,9 +3,12 @@
 # ~~~~
 
 # An example controller showing a sample home page
-GET     /                           controllers.HomeController.index(name: String ?="visitor")
+GET     /                           controllers.HomeController.index
 GET     /onsale                     controllers.HomeController.onsale
 GET     /about                     controllers.HomeController.about
+GET     /info                     controllers.HomeController.info
+GET     /contact                     controllers.HomeController.contact
+
 # An example controller showing how to use dependency injection
 GET     /count                      controllers.CountController.count
 # An example controller showing how to write asynchronous code

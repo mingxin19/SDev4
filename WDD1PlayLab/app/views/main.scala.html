@@ -2,29 +2,32 @@
 <!DOCTYPE html>
 <html>
     <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="UTF-8"/>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<style>
-	    .footer { font-weight: bold; color: white; background-color: black; }
-	    .sidecol { font-weight: bold; background-color: steelblue; }
-	    .sidecol h2 { font-weight: bold; }
-	    .midcol h1 { margin-top: 2em; text-align: center; font-weight: bold; }
-	    .midcol h3 { text-align: center; color: steelblue; }
-	    .redtext { color: red; }
-	</style>
-	<title>OFM @pagename</title>
+		<link rel="icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<style>
+	    	.footer { font-weight: bold; color: white; background-color: black; }
+	    	.sidecol { font-weight: bold; background-color: steelblue; }
+	    	.sidecol h2 { font-weight: bold; }
+	    	.midcol h1 { margin-top: 2em; text-align: center; font-weight: bold; }
+	    	.midcol h3 { text-align: center; color: steelblue; }
+	    	.redtext { color: red; }
+		</style>
+		<title>OFM @pagename</title>
     </head>
     <body>
 	<nav class="navbar navbar-inverse">
 	    <div class="container-fluid">
 		<div class="navbar-header">
-		    <a class="navbar-brand" href="#">WebSiteName</a>
+		    <a class="navbar-brand" href="#">OFM</a>
 		</div>
 		<ul class="nav navbar-nav">
-		    <li class="active"><a href="/">Home</a></li>
-		    <li><a href="/onsale">On Sale</a></li>
-		    <li><a href="/about">About us</a></li>
+		    <li @if(pagename == "Home"){class="active"}><a href="@routes.HomeController.index()">Home</a></li>
+		    <li @if(pagename == "On Sale"){class="active"}><a href="@routes.HomeController.onsale()">On Sale</a></li>
+			<li @if(pagename == "About Us"){class="active"}><a href="@routes.HomeController.about()">About us</a></li>
+			<li @if(pagename == "Information"){class="active"}><a href="@routes.HomeController.info()">Information</a></li>
+			<li @if(pagename == "Contact Us"){class="active"}><a href="@routes.HomeController.contact()">Contact us</a></li>
 		</ul>
 	    </div>
 	</nav>
@@ -40,9 +43,8 @@
 		</div>
 		<div class="col-sm-6">
 		    <div class="midcol">
-			<h1>Welcome to the Online Flea Market, @name!</h1>
-			<h3>The place where you can buy anything and sell anyting<br/> (as long as it is legal and morally ok)</h3>
-		    </div>
+				@content
+			</div>
 		</div>
 		<div class="col-sm-3">
 		    <div class="well sidecol">

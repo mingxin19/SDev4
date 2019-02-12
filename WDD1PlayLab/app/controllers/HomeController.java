@@ -17,15 +17,23 @@ public class HomeController extends Controller {
      * <code>GET</code> request with a path of <code>/</code>.
      */
     public Result index() {
-        return ok(index.render("Home"));
+        return ok(index.render());
     }
 
     public Result onsale() {
-        return ok(onsale.render("On Sale"));
+        return ok(onsale.render());
     }
 
     public Result about() {
-        return ok(about.render("About Us"));
+        return ok(about.render());
+    }
+
+    public Result info() {
+        return ok(info.render());
+    }
+
+    public Result contact() {
+        return ok(contact.render());
     }
 
 }

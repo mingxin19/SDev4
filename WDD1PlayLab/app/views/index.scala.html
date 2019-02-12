@@ -1,20 +1,4 @@
-@*
- * This template takes a single argument, a String containing a
- * message to display.
- *@
-@(message: String)
-
-@*
- * Call the `main` template with two arguments. The first
- * argument is a `String` with the title of the page, the second
- * argument is an `Html` object containing the body of the page.
- *@
-@main("Welcome to Play") {
-
-    @*
-     * Get an `Html` object by calling the built-in Play welcome
-     * template and passing a `String` message.
-     *@
-    @welcome(message, style = "java")
-
+@main("Home"){
+<h1>Welcome to the Online Flea Market, @name!</h1>
+<h3>The place where you can buy anything and sell anyting<br/> (as long as it is legal and morally ok)</h3>
 }

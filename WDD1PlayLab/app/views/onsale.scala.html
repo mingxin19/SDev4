@@ -1,3 +1,4 @@
+@(items: List[models.ItemOnSale])
 @main("On Sale"){
 	<h1>On sale here</h1>
 	<h4>Note that all products are second hand, unless otherwise stated.</h4>
@@ -13,22 +14,16 @@
 		</tr>
 		</thead>
 		<tbody>
-		<!-- Product row(s) -->
-		<tr>
-			<td>1</td>
-			<td>Television</td>
-			<td>Sony 42" LCD</td>
-			<td>1</td>
-			<td>100.00</td>
-		</tr>
-		<!-- Product row(s) -->
-		<tr>
-			<td>2</td>
-			<td>Book</td>
-			<td>Mysteries of the Universe</td>
-			<td>1</td>
-			<td>3.00</td>
-		</tr>
-		</tbody>
+			@* Loop for creating table rows from ItemOnSale data *@
+			@for(i<-items) {
+			   <tr>
+				  <td>@i.getId</td>
+				  <td>@i.getName</td>
+				  <td>@i.getDescription</td>
+				  <td>@i.getStock</td>
+				  <td>&euro; @("%.2f".format(i.getPrice))</td>
+			   </tr>
+			}
+		 </tbody>
 	</table>
  }	    

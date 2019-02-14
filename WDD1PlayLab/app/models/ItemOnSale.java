@@ -73,4 +73,10 @@ public class ItemOnSale extends Model {
     public void setPrice(double price) {
         this.price = price;
     }
+
+    public static final Finder<Long, ItemOnSale> find = new Finder<>(ItemOnSale.class);
+			    
+    public static final List<ItemOnSale> findAll() {
+        return ItemOnSale.find.all();
+    }
 }

@@ -30,9 +30,17 @@ public class HomeController extends Controller {
         return ok(index.render());
     }
 
-    public Result onsale() {
-        List<ItemOnSale> itemList = ItemOnSale.findAll();
-        return ok(onsale.render(itemList));
+    public Result onsale(Long cat) {
+        List<ItemOnSale> itemList = null;
+        List<Category> categoryList = Category.findAll();
+
+        if(cat == 0){
+            itemList =  ItemOnSale.findAll();  
+        }else{
+            itemList = Category.find.ref(cat).getItems();
+        }
+
+        return ok(onsale.render(itemList, categoryList));
     }     
 
     public Result about() {

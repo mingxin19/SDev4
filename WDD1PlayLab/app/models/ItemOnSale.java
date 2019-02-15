@@ -25,6 +25,9 @@ public class ItemOnSale extends Model {
     @Constraints.Required
     private double price;
 
+    @ManyToOne
+    private Category category;
+
     // Default Constructor
     public ItemOnSale() {
     }
@@ -78,5 +81,13 @@ public class ItemOnSale extends Model {
 			    
     public static final List<ItemOnSale> findAll() {
         return ItemOnSale.find.all();
+    }
+
+    public Category getCategory(){
+        return category;
+    }
+
+    public void setCategory(Category category){
+        this.category = category;
     }
 }

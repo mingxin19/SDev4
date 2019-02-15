@@ -5,6 +5,8 @@
 # An example controller showing a sample home page
 GET     /                           controllers.HomeController.index
 GET     /onsale                     controllers.HomeController.onsale(cat:Long?=0L)
+GET     /addItem                    controllers.HomeController.addItem
+POST    /addItemSubmit              controllers.HomeController.addItemSubmit
 GET     /about                      controllers.HomeController.about
 GET     /info                       controllers.HomeController.info
 GET     /contact                    controllers.HomeController.contact

@@ -1,6 +1,12 @@
 @(items: List[models.ItemOnSale], categories: List[models.Category])
 @main("On Sale"){
 	<h1>On sale here</h1>
+	@* Display successful new product message from flash, if it is set *@
+	@if(flash.containsKey("success")){
+		<div class="alert alert-success">
+			@flash.get("success")
+		</div>
+	}
 	<div class ="col-sm-3">
 		<h4>Categories</h4>
 		<div class="list-group">
@@ -14,7 +20,7 @@
 	</div>
 	<div class="col-sm-9">
 	<h4>Note that all products are second hand, unless otherwise stated.</h4>
-	<table class="table table-bordered table-hover table-condensed">
+	<table class="table table-bordered table-hover table-condensed">	
 		<thead>
 		<!-- The header row-->
 		<tr>
@@ -40,5 +46,11 @@
 			}
 		 </tbody>
 	</table>
+
+	<p>
+		<a href ="@routes.HomeController.addItem()">
+			<button class ="btn btn-primary">Add an item</button>
+		</a>
+	</p>
 	</div>
  }	    

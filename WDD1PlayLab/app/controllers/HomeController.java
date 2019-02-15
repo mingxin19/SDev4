@@ -19,13 +19,19 @@ import views.html.*;
  * to the application's home page.
  */
 public class HomeController extends Controller {
-
+    private FormFactory formFactory;
     /**
      * An action that renders an HTML page with a welcome message.
      * The configuration in the <code>routes</code> file means that
      * this method will be called when the application receives a
      * <code>GET</code> request with a path of <code>/</code>.
      */
+
+    @Inject
+    public HomeController(FormFactory f){
+        this.formFactory = f;
+    }
+
     public Result index() {
         return ok(index.render());
     }
@@ -41,7 +47,25 @@ public class HomeController extends Controller {
         }
 
         return ok(onsale.render(itemList, categoryList));
-    }     
+    }   
+    
+    public Result addItem() {
+        Form<ItemOnSale> itemForm = formFactory.form(ItemOnSale.class);
+        return ok(addItem.render(itemForm));
+    }
+
+    public Result addItemSubmit(){
+        Form<ItemOnSale> newItemForm = formFactory.form(ItemOnSale.class).bindFromRequest();
+
+        if(newItemForm.hasErrors()){
+            return badRequest(addItem.render(newItemForm));
+        }else{
+            ItemOnSale newItem = newItemForm.get();
+            newItem.save();
+            flash("success", "Item "+newItem.getName() + " was added.");
+            return redirect(controllers.routes.HomeController.onsale(0));
+        }
+    }
 
     public Result about() {
         return ok(about.render());

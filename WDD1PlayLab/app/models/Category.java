@@ -33,7 +33,7 @@ public class Category extends Model {
       this.items = items;
    }
 
-   public long getId(){
+   public Long getId(){
        return id;
    }
 
@@ -65,5 +65,13 @@ public class Category extends Model {
         return Category.find.query().where().orderBy("name asc").findList();
     }
     
-    
+    public static Map<String,String> options() {
+        LinkedHashMap<String,String> options = new LinkedHashMap<>();
+     
+        // Get all the categories from the database and add them to the options hash map
+        for (Category c: Category.findAll()) {
+           options.put(c.getId().toString(), c.getName());
+        }
+        return options;
+    }
 }

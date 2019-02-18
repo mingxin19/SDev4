@@ -56,15 +56,41 @@ public class HomeController extends Controller {
 
     public Result addItemSubmit(){
         Form<ItemOnSale> newItemForm = formFactory.form(ItemOnSale.class).bindFromRequest();
-
+        
         if(newItemForm.hasErrors()){
             return badRequest(addItem.render(newItemForm));
         }else{
             ItemOnSale newItem = newItemForm.get();
-            newItem.save();
-            flash("success", "Item "+newItem.getName() + " was added.");
+            
+            if(newItem.getId() == null){
+                newItem.save();
+            }else{
+                newItem.update();
+            }
+            
+            flash("success", "Item "+newItem.getName() + " was added/updated.");
             return redirect(controllers.routes.HomeController.onsale(0));
         }
+    }
+
+    public Result deleteItem(Long id){
+        ItemOnSale.find.ref(id).delete();
+        flash("success","Item has been deleted.");
+        return redirect(controllers.routes.HomeController.onsale(0));
+    }
+
+    public Result updateItem(Long id){
+        ItemOnSale i;
+        Form<ItemOnSale> itemForm;
+
+        try{
+            i = ItemOnSale.find.byId(id);
+            itemForm = formFactory.form(ItemOnSale.class).fill(i);
+        }catch(Exception ex){
+            return badRequest("error");
+        }
+
+        return ok(addItem.render(itemForm));
     }
 
     public Result about() {

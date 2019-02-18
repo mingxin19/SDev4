@@ -8,6 +8,7 @@ GET     /onsale                     controllers.HomeController.onsale(cat:Long?=
 GET     /addItem                    controllers.HomeController.addItem
 POST    /addItemSubmit              controllers.HomeController.addItemSubmit
 GET     /deleteItem/:id             controllers.HomeController.deleteItem(id: Long)
+GET     /updateItem/:id             controllers.HomeController.updateItem(id: Long)
 GET     /about                      controllers.HomeController.about
 GET     /info                       controllers.HomeController.info
 GET     /contact                    controllers.HomeController.contact

@@ -43,7 +43,12 @@
 				  <td>@i.getStock</td>
 				  <td>&euro; @("%.2f".format(i.getPrice))</td>
 				  <td>
-					  <a href="@routes.HomeController.deleteItem(i.getId)" class="buuton-xs btn-danger">
+					<a href="@routes.HomeController.updateItem(i.getId)" class="buuton-xs btn-danger">
+						<span class="glyphicon glyphicon-pencil"></span>
+					</a>
+				</td>
+				  <td>
+					  <a href="@routes.HomeController.deleteItem(i.getId)" class="buuton-xs btn-danger" onclick="return confirmDel();">
 						  <span class="glyphicon glyphicon-trash"></span>
 					  </a>
 				  </td>

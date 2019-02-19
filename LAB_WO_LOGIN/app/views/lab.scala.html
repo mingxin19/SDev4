@@ -1,0 +1,26 @@
+@(pagename: String)(content: Html)
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type = "text/css" href = "lab.css">
+    <title>OFM @pagename</title>
+</head>
+<body>
+
+<ul>
+    <li @if(pagename == "Home"){class="active"}><a href="@routes.HomeController.index()">Home</a></li>
+    <li @if(pagename == "On Sale"){class="active"}><a href="@routes.HomeController.onsale()">On Sale</a></li>
+    <li @if(pagename == "About Us"){class="active"}><a href="@routes.HomeController.about()">About us</a></li>
+    <li @if(pagename == "Information"){class="active"}><a href="@routes.HomeController.info()">Information</a></li>
+    <li @if(pagename == "Contact Us"){class="active"}><a href="@routes.HomeController.contact()">Contact us</a></li>
+</ul>
+
+<main>
+    <div class="midcol">
+		@content
+	</div>
+
+</main>
+
+</body>
+</html>

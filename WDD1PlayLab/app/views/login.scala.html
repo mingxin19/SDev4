@@ -1,0 +1,20 @@
+@(loginForm: Form[models.users.Login])
+@import helper._
+
+@main("Login"){
+    <h3>Sign in</h3>
+    
+    @if(loginForm.hasGlobalErrors){
+        <p class ="alert alert-warning">
+            @for(e <- loginForm.globalErrors){
+                @e.message<br/>
+            }
+        </p>
+    }
+
+    @helper.form(action = controllers.routes.LoginController.loginSubmit()){
+        @* CSRF attack prevention *@
+        @* This token, sent by the controller, will be used to authenticate the form submission as a means of avoiding cross-site request forgery *@
+
+    }
+}

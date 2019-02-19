@@ -13,7 +13,6 @@ GET     /about                      controllers.HomeController.about
 GET     /info                       controllers.HomeController.info
 GET     /contact                    controllers.HomeController.contact
 
-GET     /login                      controllers.LoginCOntroller.login
 # An example controller showing how to use dependency injection
 GET     /count                      controllers.CountController.count
 # An example controller showing how to write asynchronous code

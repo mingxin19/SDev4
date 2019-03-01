@@ -1,0 +1,24 @@
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEVca1/app/models/users/Customer.java:21:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Basket[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class models.users.Customer[0m
+[0m[[0m[31merror[0m] [0m[0m    private Basket basket;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEVca1/app/models/users/Customer.java:23:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class ShopOrder[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class models.users.Customer[0m
+[0m[[0m[31merror[0m] [0m[0m    private List<ShopOrder> orders;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEVca1/app/models/users/Customer.java:29:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Basket[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class models.users.Customer[0m
+[0m[[0m[31merror[0m] [0m[0m    public Basket getBasket() {[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEVca1/app/models/users/Customer.java:33:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Basket[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class models.users.Customer[0m
+[0m[[0m[31merror[0m] [0m[0m    public void setBasket(Basket basket) {[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEVca1/app/models/users/Customer.java:37:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class ShopOrder[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class models.users.Customer[0m
+[0m[[0m[31merror[0m] [0m[0m    public List<ShopOrder> getOrders() {[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEVca1/app/models/users/Customer.java:41:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class ShopOrder[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class models.users.Customer[0m
+[0m[[0m[31merror[0m] [0m[0m    public void setOrders(List<ShopOrder> orders) {[0m

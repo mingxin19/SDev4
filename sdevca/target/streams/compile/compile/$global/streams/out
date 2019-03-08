@@ -1,0 +1,142 @@
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/addAdmin.scala.html:11:40: value addAdminSubmit is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    @form(action=routes.HomeController.addAdminSubmit(), 'class -> "form-horizontal", 'role -> "form") {[0m
+[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/addAdmin.scala.html:36:49: value usersAdmin is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m                <a href="@routes.HomeController.usersAdmin()">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/addCustomer.scala.html:1:1: type Customer is not a member of package models.users[0m
+[0m[[0m[31merror[0m] [0m[0m@(userForm: Form[models.users.Customer],user: models.users.User)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/addCustomer.scala.html:1:31: type Customer is not a member of package models.users[0m
+[0m[[0m[31merror[0m] [0m[0m@(userForm: Form[models.users.Customer],user: models.users.User)[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/addCustomer.scala.html:11:40: value addCustomerSubmit is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    @form(action=routes.HomeController.addCustomerSubmit(), 'class -> "form-horizontal", 'role -> "form") {[0m
+[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/addCustomer.scala.html:43:49: value usersCustomer is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m                <a href="@routes.HomeController.usersCustomer()">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/addCustomer.scala.html:48:20: type Customer is not a member of package models.users[0m
+[0m[[0m[31merror[0m] [0m[0m} @* end of main *@[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/addItem.scala.html:1:1: type ItemOnSale is not a member of package models.products[0m
+[0m[[0m[31merror[0m] [0m[0m@(itemForm: Form[models.products.ItemOnSale],user: models.users.User)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/addItem.scala.html:1:34: type ItemOnSale is not a member of package models.products[0m
+[0m[[0m[31merror[0m] [0m[0m@(itemForm: Form[models.products.ItemOnSale],user: models.users.User)[0m
+[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/addItem.scala.html:11:40: value addItemSubmit is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    @form(action=routes.HomeController.addItemSubmit(), 'class -> "form-horizontal", 'role -> "form",[0m
+[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/addItem.scala.html:25:44: object Category is not a member of package models.products[0m
+[0m[[0m[31merror[0m] [0m[0m            @for((value, name) <- products.Category.options){[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/addItem.scala.html:28:38: object Category is not a member of package models.products[0m
+[0m[[0m[31merror[0m] [0m[0m                        @if(products.Category.inCategory(value.toLong, itemForm("id").getValue.get.toLong)){[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/addItem.scala.html:28:64: value toLong is not a member of Any[0m
+[0m[[0m[31merror[0m] [0m[0m                        @if(products.Category.inCategory(value.toLong, itemForm("id").getValue.get.toLong)){[0m
+[0m[[0m[31merror[0m] [0m[0m                                                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/addItem.scala.html:51:49: value onsale is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m                <a href="@routes.HomeController.onsale(0)">[0m
+[0m[[0m[31merror[0m] [0m[0m                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/addItem.scala.html:56:20: type ItemOnSale is not a member of package models.products[0m
+[0m[[0m[31merror[0m] [0m[0m} @* end of main *@[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/admin.scala.html:33:26: value getName is not a member of models.users.Administrator[0m
+[0m[[0m[31merror[0m] [0m[0m                  <td>@u.getName</td>[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/admin.scala.html:37:40: value updateAdmin is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m							<a href="@routes.HomeController.updateAdmin(u.getEmail)" class="button-xs btn-danger">[0m
+[0m[[0m[31merror[0m] [0m[0m							                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/admin.scala.html:43:40: value deleteAdmin is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m							<a href="@routes.HomeController.deleteAdmin(u.getEmail)" class="button-xs btn-danger" onclick="return confirmDel();">[0m
+[0m[[0m[31merror[0m] [0m[0m							                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/admin.scala.html:54:41: value addAdmin is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m        <a href="@routes.HomeController.addAdmin()">[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/customer.scala.html:1:1: type Customer is not a member of package models.users[0m
+[0m[[0m[31merror[0m] [0m[0m@(users: List[models.users.Customer],user: models.users.User)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/customer.scala.html:1:28: type Customer is not a member of package models.users[0m
+[0m[[0m[31merror[0m] [0m[0m@(users: List[models.users.Customer],user: models.users.User)[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/customer.scala.html:35:18: missing parameter type[0m
+[0m[[0m[31merror[0m] [0m[0m            @for(u<-users) {[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/customer.scala.html:50:40: value updateCustomer is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m							<a href="@routes.HomeController.updateCustomer(u.getEmail)" class="button-xs btn-danger">[0m
+[0m[[0m[31merror[0m] [0m[0m							                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/customer.scala.html:56:40: value deleteCustomer is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m							<a href="@routes.HomeController.deleteCustomer(u.getEmail)" class="button-xs btn-danger" onclick="return confirmDel();">[0m
+[0m[[0m[31merror[0m] [0m[0m							                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/customer.scala.html:67:41: value addCustomer is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m        <a href="@routes.HomeController.addCustomer()">[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/customer.scala.html:73:2: type Customer is not a member of package models.users[0m
+[0m[[0m[31merror[0m] [0m[0m}[0m
+[0m[[0m[31merror[0m] [0m[0m ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/login.scala.html:21:46: value LoginController is not a member of object controllers.routes[0m
+[0m[[0m[31merror[0m] [0m[0m    @helper.form(action = controllers.routes.LoginController.loginSubmit()) {[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/main.scala.html:28:27: value LoginController is not a member of object controllers.routes[0m
+[0m[[0m[31merror[0m] [0m[0m					<li><a href="@routes.LoginController.logout()"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>[0m
+[0m[[0m[31merror[0m] [0m[0m					                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/main.scala.html:30:42: value addCustomer is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m					<li><a href="@routes.HomeController.addCustomer()"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>[0m
+[0m[[0m[31merror[0m] [0m[0m					                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/main.scala.html:31:27: value LoginController is not a member of object controllers.routes[0m
+[0m[[0m[31merror[0m] [0m[0m					<li><a href="@routes.LoginController.login()"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>[0m
+[0m[[0m[31merror[0m] [0m[0m					                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/main.scala.html:40:24: value ProjectCtrl is not a member of object controllers.routes[0m
+[0m[[0m[31merror[0m] [0m[0m						<a href='@routes.ProjectCtrl.listProjects(0)'><img src="/assets/images/logo.png" width='300px' height='300px' alt="logo"></a>[0m
+[0m[[0m[31merror[0m] [0m[0m						                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/onsale.scala.html:1:1: type ItemOnSale is not a member of package models.products[0m
+[0m[[0m[31merror[0m] [0m[0m@(items: List[models.products.ItemOnSale],categories: List[models.products.Category],user: models.users.User, env: play.api.Environment)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/onsale.scala.html:1:31: type ItemOnSale is not a member of package models.products[0m
+[0m[[0m[31merror[0m] [0m[0m@(items: List[models.products.ItemOnSale],categories: List[models.products.Category],user: models.users.User, env: play.api.Environment)[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/onsale.scala.html:1:76: type Category is not a member of package models.products[0m
+[0m[[0m[31merror[0m] [0m[0m@(items: List[models.products.ItemOnSale],categories: List[models.products.Category],user: models.users.User, env: play.api.Environment)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/onsale.scala.html:15:55: value onsale is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m                    <a href = "@routes.HomeController.onsale(0)" class="list-group-item">All Categories</a>[0m
+[0m[[0m[31merror[0m] [0m[0m                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/onsale.scala.html:16:16: missing parameter type[0m
+[0m[[0m[31merror[0m] [0m[0m		        @for(c<-categories) {[0m
+[0m[[0m[31merror[0m] [0m[0m		             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/onsale.scala.html:17:46: value onsale is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m			        <a href = "@routes.HomeController.onsale(c.getId())" class="list-group-item catheight">@c.getName[0m
+[0m[[0m[31merror[0m] [0m[0m			                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/onsale.scala.html:42:18: missing parameter type[0m
+[0m[[0m[31merror[0m] [0m[0m            @for(i<-items) {[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/onsale.scala.html:58:40: value updateItem is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m							<a href="@routes.HomeController.updateItem(i.getId)" class="button-xs btn-danger">[0m
+[0m[[0m[31merror[0m] [0m[0m							                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/onsale.scala.html:64:40: value deleteItem is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m							<a href="@routes.HomeController.deleteItem(i.getId)" class="button-xs btn-danger" onclick="return confirmDel();">[0m
+[0m[[0m[31merror[0m] [0m[0m							                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/onsale.scala.html:76:41: value addItem is not a member of controllers.ReverseHomeController[0m
+[0m[[0m[31merror[0m] [0m[0m        <a href="@routes.HomeController.addItem()">[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/onsale.scala.html:82:3: type ItemOnSale is not a member of package models.products[0m
+[0m[[0m[31merror[0m] [0m[0m }[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/registerUser.scala.html:1:1: type UserPassword2 is not a member of package models.users[0m
+[0m[[0m[31merror[0m] [0m[0m@(userForm: Form[models.users.UserPassword2],user: models.users.User)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/registerUser.scala.html:1:31: type UserPassword2 is not a member of package models.users[0m
+[0m[[0m[31merror[0m] [0m[0m@(userForm: Form[models.users.UserPassword2],user: models.users.User)[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/registerUser.scala.html:18:25: value LoginController is not a member of object controllers.routes[0m
+[0m[[0m[31merror[0m] [0m[0m    @form(action=routes.LoginController.registerUserSubmit(), 'class -> "form-horizontal", 'role -> "form") {[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/registerUser.scala.html:44:34: value LoginController is not a member of object controllers.routes[0m
+[0m[[0m[31merror[0m] [0m[0m                <a href="@routes.LoginController.registerUser()">[0m
+[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/ca/SDEV4lab/lab7/app/views/registerUser.scala.html:49:20: type UserPassword2 is not a member of package models.users[0m
+[0m[[0m[31merror[0m] [0m[0m} @* end of main *@[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m47 errors found[0m
